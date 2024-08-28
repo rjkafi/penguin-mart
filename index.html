@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- font awesome -->
+   <script src="https://kit.fontawesome.com/285d4c1eda.js" crossorigin="anonymous"></script>
+   <!-- google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+   <!-- daisy Ui & tailwind css CDN -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+   <link rel="icon" href="./icons/penguin-158551_1280.png">
+  <title>Penguin Mart</title>
+ 
+</head>
+<script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+            'bebas':['Bebas Neue', 'sans-serif'],
+           ' roboto':['Roboto', 'sans-serif']
+          },
+        extend: {
+          colors: {
+            clifford: '#da373d',
+           'brand-orange':'#FABE4C',
+           'brand-green':'#A4BC46',
+           'title':'#363958',
+           'p':'#3E3E3E'
+          }
+        }
+      }
+    }
+  </script>
+<body>
+   <header class="p-2 bg-[#FFFBF0]">
+    <!-- navbar -->
+    <nav class="container mx-auto">
+        <div class="navbar flex ">
+            <div class="flex-1">
+                <img class="w-8 h-9" src="./icons/penguin-158551_1280.png" alt="">
+              <a class="text-3xl font-bold text-brand-green">Penguin <span class="text-title">Mart</span></a>
+            </div>
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a class="hover:bg-brand-green font-medium" href=""> Home</a></li>
+                <li><a class="hover:bg-brand-green font-medium" href=""> Products</a></li>
+                <li><a class="hover:bg-brand-green font-medium" href=""> About Us</a></li>
+                <li><a class="hover:bg-brand-green font-medium" href=""> Contact Us</a></li>
+                 </ul>
+            </div>
+            <div class="flex md:hidden">
+               <a href=""><i class="fa-solid fa-bars"></i></a>
+            </div>
+          </div>
+    </nav>
+    <!-- banner -->
+     <div class="md:flex container mx-auto justify-between items-center gap-4 p-4">
+        <!-- banner text -->
+         <div class="space-y-3">
+            <!-- text -->
+             <div>
+                <h2 class="text-7xl text-brand-orange font-bebas">Be the Penguins <br> <span class="text-title">of Winter</span></h2>
+                <p class="text-p">Lorem Ipsum is simply dummy text of the printing  <br>
+                and typesetting industry.</p>
+             </div>
+                <!-- btn -->
+                 <div >
+                    <button class=" bg-brand-green py-2 px-3 rounded outline-none  text-white "><i class="fa-solid fa-cart-shopping"></i>Buy Now</button>
+                 </div>
+         </div>
+         <!-- banner -image -->
+          <div>
+            <img class="pb-3 w-full" src="./images/model.png" alt="">
+
+          </div>
+     </div>
+   </header>
+   <main class="container mx-auto p-3">
+      <!-- woman cloth section -->
+    <section class="my-20 p-2">
+        <!-- title -->
+         <div class="mb-4">
+            <h3 class="text-title text-4xl ">WOMAN JACKET</h3>
+         </div>
+         <!-- cards -->
+          <div class=" grid grid-cols-1 lg:grid-cols-3 gap-4 justify-center items-center">
+            <!-- card-1 -->
+             <div class="p-4 border shadow-lg rounded ">
+                <!-- card image -->
+                 <div class="bg-[#F1F1F1] p-2 rounded ">
+                    <img class="w-full" src="./images/jacket-1.png" alt="">
+                 </div>
+                 <!-- card text -->
+                  <div class="space-y-3 mb-3">
+                    <h5 class="text-2xl font-bold text-title">Yellow Coat Jacket </h5>
+                    <p>Lorem Ipsum is simply dummy text of the <br>
+                     printing and typesetting industry.</p>
+                     <!-- price and btn -->
+                      <div class="flex items-center justify-between">
+                        <h4 class="text-4xl font-black text-brand-orange">$234</h4>
+                        <div>
+                            <button class=" bg-brand-green py-2 px-3 rounded outline-none  text-white "><i class="fa-solid fa-cart-shopping"></i>Buy Now</button>
+                         </div>
+
+                      </div>
+                  </div>
+             </div>
+            <!-- card-2 -->
+             <div class="p-4 border shadow-lg rounded ">
+                <!-- card image -->
+                 <div class="bg-[#F1F1F1] p-2 rounded">
+                    <img class="w-full" src="./images/jacket-2.png" alt="">
+                 </div>
+                 <!-- card text -->
+                  <div class="space-y-3 mb-3">
+                    <h5 class="text-2xl font-bold text-title">Ladies Jacket  </h5>
+                    <p>Lorem Ipsum is simply dummy text of the <br>
+                     printing and typesetting industry.</p>
+                     <!-- price and btn -->
+                      <div class="flex items-center justify-between">
+                        <h4 class="text-4xl font-black text-brand-orange">$234</h4>
+                        <div>
+                            <button class=" bg-brand-green py-2 px-3 rounded outline-none  text-white "><i class="fa-solid fa-cart-shopping"></i>Buy Now</button>
+                         </div>
+
+                      </div>
+                  </div>
+             </div>
+            <!-- card-3 -->
+             <div class="p-4 border shadow-lg rounded ">
+                <!-- card image -->
+                 <div class="bg-[#F1F1F1] p-2 rounded ">
+                    <img class="w-full" src="./images/jacket-3.png" alt="">
+                 </div>
+                 <!-- card text -->
+                  <div class="space-y-3 mb-3">
+                    <h5 class="text-2xl font-bold text-title">Woman Leather Jacket </h5>
+                    <p>Lorem Ipsum is simply dummy text of the <br>
+                     printing and typesetting industry.</p>
+                     <!-- price and btn -->
+                      <div class="flex items-center justify-between">
+                        <h4 class="text-4xl font-black text-brand-orange">$234</h4>
+                        <div>
+                            <button class=" bg-brand-green py-2 px-3 rounded outline-none  text-white "><i class="fa-solid fa-cart-shopping"></i>Buy Now</button>
+                         </div>
+
+                      </div>
+                  </div>
+             </div>
+          </div>
+
+    </section>
+      <!-- Man cloth section -->
+    <section class="my-20 p-2">
+        <!-- title -->
+         <div class="mb-4">
+            <h3 class="text-title text-4xl">MAN JACKET</h3>
+         </div>
+         <!-- cards -->
+          <div class=" grid grid-cols-1 lg:grid-cols-3 gap-4 justify-center items-center">
+            <!-- card-1 -->
+             <div class="p-4 border shadow-lg rounded ">
+                <!-- card image -->
+                 <div class="bg-[#F1F1F1] p-2 rounded ">
+                    <img class="w-full" src="./images/jacket-1.png" alt="">
+                 </div>
+                 <!-- card text -->
+                  <div class="space-y-3 mb-3">
+                    <h5 class="text-2xl font-bold text-title">Snowboard Jacket Mens </h5>
+                    <p>Lorem Ipsum is simply dummy text of the <br>
+                     printing and typesetting industry.</p>
+                     <!-- price and btn -->
+                      <div class="flex items-center justify-between">
+                        <h4 class="text-4xl font-black text-brand-orange">$234</h4>
+                        <div>
+                            <button class=" bg-brand-green py-2 px-3 rounded outline-none  text-white "><i class="fa-solid fa-cart-shopping"></i>Buy Now</button>
+                         </div>
+
+                      </div>
+                  </div>
+             </div>
+            <!-- card-2 -->
+             <div class="p-4 border shadow-lg rounded ">
+                <!-- card image -->
+                 <div class="bg-[#F1F1F1] p-2 rounded">
+                    <img class="w-full" src="./images/jacket-2.png" alt="">
+                 </div>
+                 <!-- card text -->
+                  <div class="space-y-3 mb-3">
+                    <h5 class="text-2xl font-bold text-title">Man Leather Jackets </h5>
+                    <p>Lorem Ipsum is simply dummy text of the <br>
+                     printing and typesetting industry.</p>
+                     <!-- price and btn -->
+                      <div class="flex items-center justify-between">
+                        <h4 class="text-4xl font-black text-brand-orange">$234</h4>
+                        <div>
+                            <button class=" bg-brand-green py-2 px-3 rounded outline-none  text-white "><i class="fa-solid fa-cart-shopping"></i>Buy Now</button>
+                         </div>
+
+                      </div>
+                  </div>
+             </div>
+            <!-- card-3 -->
+             <div class="p-4 border shadow-lg rounded ">
+                <!-- card image -->
+                 <div class="bg-[#F1F1F1] p-2 rounded ">
+                    <img class="w-full" src="./images/jacket-3.png" alt="">
+                 </div>
+                 <!-- card text -->
+                  <div class="space-y-3 mb-3">
+                    <h5 class="text-2xl font-bold text-title">Man Casual Jackets </h5>
+                    <p>Lorem Ipsum is simply dummy text of the <br>
+                     printing and typesetting industry.</p>
+                     <!-- price and btn -->
+                      <div class="flex items-center justify-between">
+                        <h4 class="text-4xl font-black text-brand-orange">$234</h4>
+                        <div>
+                            <button class=" bg-brand-green py-2 px-3 rounded outline-none  text-white "><i class="fa-solid fa-cart-shopping"></i>Buy Now</button>
+                         </div>
+
+                      </div>
+                  </div>
+             </div>
+          </div>
+
+    </section>
+    <!-- services section -->
+     <section class="my-24 p-2">
+      <!-- service content -->
+       <div class="grid grid-cols-1 lg:grid-cols-2  justify-center items-center gap-4">
+         <!-- cards -->
+          <div class="space-y-4">
+            <!-- card-1 -->
+             <div  class="flex justify-start items-center p-4 rounded-xl shadow-lg gap-5 ">
+               <!-- card-image -->
+                <div>
+                  <img class="w-16 " src="./icons/house.png" alt="">
+                </div>
+               <!-- card-text-->
+                <div class="space-y-2">
+                  <h5 class="text-2xl  tex-title font-bold">Find the Perfect Fit</h5>
+                  <p class="text-p">Everybody is different, which is why we <br>
+                     offer styles for every body.</p>
+                </div>
+             </div>
+            <!-- card-2-->
+             <div  class="flex justify-start items-center p-4 rounded-xl shadow-lg gap-5 ">
+               <!-- card-image -->
+                <div>
+                  <img class="w-16 " src="./icons/box.png" alt="">
+                </div>
+               <!-- card-text-->
+                <div class="space-y-2">
+                  <h5 class="text-2xl  tex-title font-bold">Free Exchanges</h5>
+                  <p class="text-p">One of the many reasons you can shop
+                     with peace of mind..</p>
+                </div>
+             </div>
+            <!-- card-3 -->
+             <div  class="flex justify-start items-center p-4 rounded-xl shadow-lg gap-5 ">
+               <!-- card-image -->
+                <div>
+                  <img class="w-16 " src="./icons/question.png" alt="">
+                </div>
+               <!-- card-text-->
+                <div class="space-y-2">
+                  <h5 class="text-2xl  tex-title font-bold">Contact Our Seller</h5>
+                  <p class="text-p">They are here to help you. That's quite 
+                     literally what we pay them for.</p>
+                </div>
+             </div>
+          </div>
+          <!-- shopping  full image -->
+           <div>
+            <img class="w-full align-middle" src="./images/shopping.png" alt="">
+           </div>
+       </div>
+
+     </section>
+   </main>
+   <!-- footer -->
+   <footer class="footer bg-neutral text-neutral-content p-10">
+      <aside>
+         <img class="w-[78px] h-[76px]" src="./icons/penguin-158551_1280.png" alt="">
+         <a class="text-3xl font-bold text-brand-green">Penguin <span class="text-brand-orange">Mart</span></a>
+         <p class="text-white">Providing reliable Clothes since2002</p>
+       </aside>
+      <nav>
+        <h6 class="footer-title">Social Links</h6>
+        <div class="grid grid-flow-col gap-4">
+         <a href=""><i class="fa-brands fa-facebook text-white text-3xl"></i></a>
+         <a href=""><i class="fa-brands fa-facebook-messenger text-white text-3xl"></i></a>
+         <a href=""><i class="fa-brands fa-twitter text-white text-3xl"></i></a>
+         <a href=""> <i class="fa-brands fa-youtube text-white text-3xl"></i></a>
+        </div>
+      </nav>
+    </footer>
+   
+    
+</body>
+</html>
